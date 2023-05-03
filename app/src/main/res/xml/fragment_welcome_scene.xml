@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/widget" />
+        <Constraint
+            android:id="@+id/ivPhotoLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="227dp"
+            android:layout_height="227dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterGreeting"
+            android:layout_marginTop="107dp"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/tvMyStoryShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            app:transitionEasing="cubic(0.2,0.19,0.8,0.78)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0" />
+        <Constraint
+            android:id="@+id/tvRegisterGreeting"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvMyStoryShare"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:alpha="0"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/widget" />
+        <Constraint
+            android:id="@+id/ivPhotoLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="227dp"
+            android:layout_height="227dp"
+            app:layout_constraintTop_toBottomOf="@id/tvRegisterGreeting"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="75dp"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/tvMyStoryShare"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="70dp"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/tvRegisterGreeting"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvMyStoryShare"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:alpha="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp" />
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:autoTransition="animateToEnd"
+        app:constraintSetStart="@+id/start"
+        app:duration="1500" />
+</MotionScene>

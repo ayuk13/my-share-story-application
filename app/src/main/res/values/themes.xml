@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyShareStory" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_201</item>
+        <item name="colorPrimaryVariant">@color/purple_201</item>
+        <item name="colorOnPrimary">@color/light_pink</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_501</item>
+        <item name="colorSecondaryVariant">@color/purple_501</item>
+        <item name="colorOnSecondary">@color/light_pink</item>
+        <!-- Status bar color. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    app:layoutDescription="@xml/fragment_welcome_scene"
+    tools:context=".ui.primary.welcome.WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/ivPhotoLogo"
+        android:layout_width="227dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="55dp"
+        android:contentDescription="@string/photo_logo_image"
+        android:src="@drawable/ic_photo_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisterGreeting" />
+
+    <TextView
+        android:id="@+id/tvMyStoryShare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="45dp"
+        android:gravity="center"
+        android:text="@string/tv_my_story_share"
+        android:textColor="@color/purple_201"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRegisterGreeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/register_greeting"
+        android:textColor="@color/purple_201"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/tvMyStoryShare"
+        app:layout_constraintStart_toStartOf="@id/tvMyStoryShare"
+        app:layout_constraintTop_toBottomOf="@id/tvMyStoryShare" />
+
+    <Button
+        android:id="@+id/btnSignUpRegister"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_radius_10dp_stroke"
+        android:text="@string/sign_up_now"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_201"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvMyStoryShare"
+        app:layout_constraintStart_toStartOf="@id/tvMyStoryShare"
+        app:layout_constraintTop_toBottomOf="@id/ivPhotoLogo" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/purple_201"
+        app:layout_constraintEnd_toEndOf="@id/btnSignUpRegister"
+        app:layout_constraintStart_toStartOf="@id/btnSignUpRegister"
+        app:layout_constraintTop_toBottomOf="@id/btnSignUpRegister" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
